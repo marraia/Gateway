@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  gateway:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5555:80"
+
+  pedido:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5556:80"
+
+
+  estoque:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5557:80"
+
